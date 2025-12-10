@@ -1,13 +1,17 @@
 # 🐧 Sistem Asistanı (Linux System Assistant)
 
-[![Pardus 25](https://img.shields.io/badge/Pardus-25-2ecc71?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/tvardar/sistem-asistani)
+[![Pardus 25](https://img.shields.io/badge/Pardus-25-2ecc71?style=for-the-badge&logo=linux&logoColor=white)]([https://github.com/tvardar/sistem-asistani](https://github.com/tvardar/sistem-asistani/releases/download/v1.0/sistem-asistani_1.0_amd64.deb))
+[![Debian 12](https://img.shields.io/badge/Debian-12-A81D33?style=for-the-badge&logo=debian&logoColor=white)]([https://www.debian.org](https://github.com/tvardar/sistem-asistani/releases/download/v1.0/sistem-asistani_1.0_amd64.deb))
+
+[![Pardus 23](https://img.shields.io/badge/Pardus-23-e67e22?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/tvardar/sistem-asistani)
+[![Debian 11](https://img.shields.io/badge/Debian-11-A81D33?style=for-the-badge&logo=debian&logoColor=white)](https://www.debian.org)
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow.svg)
 ![License](https://img.shields.io/badge/License-GPLv3-green.svg)
 ![Platform](https://img.shields.io/badge/Platform-Pardus%20%7C%20Debian-red.svg)
 
-**Sistem Asistanı**, özellikle **Pardus** ve **Debian** tabanlı Linux dağıtımları için geliştirilmiş; sistem izleme, bakım, onarım ve yönetim işlemlerini tek bir modern arayüzde toplayan gelişmiş bir araçtır.
+**Sistem Asistanı**, özellikle **Pardus 25 (Debian 12)** ve **Pardus 23 (Debian 11)** tabanlı Linux dağıtımları için geliştirilmiş; sistem izleme, bakım, onarım ve yönetim işlemlerini tek bir modern arayüzde toplayan gelişmiş bir araçtır.
 
 Python ve PyQt6 teknolojileriyle geliştirilmiş olup, son kullanıcıların karmaşık terminal komutlarına ihtiyaç duymadan sistemlerini yönetmelerini sağlar.
 
@@ -58,16 +62,17 @@ Uygulama modüler bir yapıya sahiptir ve aşağıdaki temel araçları içerir:
 * **Süreç Yöneticisi:** Çalışan işlemleri (PID, CPU, RAM) izleme ve sonlandırma.
 
 ### 🌐 Ağ & İnternet
+* **Ağ Tarayıcı:** Wifi ağınızda kaç cihaz bağlı, ip adresleri, isim ve markaları gibi bilgileri görün.
 * **Wi-Fi Analizörü:** Çevredeki ağları tarama, sinyal gücü grafiği ve kanal önerisi (2.4GHz optimizasyonu).
 * **Hız Testi:** Çoklu iş parçacığı ile İndirme (Download), Yükleme (Upload) ve Gecikme (Ping) testi.
 * **DNS Yönetimi:** Tek tıkla Google, Cloudflare, OpenDNS veya Otomatik DNS geçişi.
-* **Site Engelleyici:** `/etc/hosts` üzerinden istenmeyen siteleri engelleme ve zaman ayarlı internet kısıtlama.
+* **Site Engelleyici:** `/etc/hosts` üzerinden istenmeyen siteleri engelleme.
 * **Port Yöneticisi:** Açık portları listeleme ve güvenlik duvarı (UFW) üzerinden port açma/kapama.
 
 ### 🛠️ Bakım & Onarım
-* **Sistem Temizliği:** Apt önbelleği, eski kernel logları, tarayıcı çöp dosyaları ve thumbnail temizliği.
+* **Sistem Temizliği:** Apt önbelleği, eski kernel logları, tarayıcı çöp dosyaları ve çöp kutusu temizliği.
 * **Disk Sağlığı:** S.M.A.R.T verileri ile disk ömrü analizi ve sağlık raporu.
-* **Açılış Analizi:** Sistemi yavaşlatan başlangıç servislerinin tespiti (`systemd-analyze`).
+* **Açılış Analizi:** Sistemi yavaşlatan başlangıç servislerinin tespiti.
 * **Otomatik Bakım:** Paket güncellemeleri, bozuk paket onarımı ve GRUB güncelleme araçları.
 
 ### 💾 Disk & Dosya
@@ -83,36 +88,118 @@ Uygulama modüler bir yapıya sahiptir ve aşağıdaki temel araçları içerir:
 
 ## 🚀 Kurulum
 
-### Yöntem 1: .deb Paketi ile Kurulum (Önerilen - Kolay)
-GitHub **[Releases](https://github.com/tvardar/sistem-asistani/releases)** sayfasından son sürümü indirin ve **çift tıklayarak kurun** veya terminalden:
+Bu proje, sistem kütüphanelerindeki farklılıklar nedeniyle **Pardus 25** ve **Pardus 23** için ayrı paketleme yöntemleri sunar.
+
+### Yöntem 1: .deb Paketi ile Kurulum (En Kolay)
+GitHub **[Releases](https://github.com/tvardar/sistem-asistani/releases)** sayfasından sisteminize uygun olan sürümü indirin ve kurun:
+
+* **Pardus 25 / Debian 12 İçin:** `sistem-asistani_1.0_amd64.deb`
+* **Pardus 23 / Debian 11 İçin:** `sistem-asistani_1.0_pardus23_amd64.deb`
 
 ```bash
-sudo dpkg -i sistem-asistani_1.0_amd64.deb
+sudo dpkg -i indirilen_paket_adi.deb
 sudo apt-get install -f  # Eksik bağımlılık varsa tamamlar
 ```
 
-### Yöntem 2: Paketleme Sihirbazı ile Kurulum (Offline Paket Oluşturma)
-Bu yöntem, projenin kaynak kodlarını çeker, **gerekli tüm Python bağımlılıklarını internetten indirip içine gömer** ve size internet olmayan bilgisayarlarda da çalışabilen bir .deb paketi üretir.
+---
+
+
+### Yöntem 2: Paketleme Sihirbazı ile Kurulum (Önerilen)
+Bu yöntem, kaynak kodları indirir, gerekli Python kütüphanelerini internetten çeker ve sizin sisteminize özel, internetsiz çalışabilen bir .deb paketi üretir.
+
+Depoyu Klonlayın:
 
 ```bash
 git clone [https://github.com/tvardar/sistem-asistani.git](https://github.com/tvardar/sistem-asistani.git)
 cd sistem-asistani
-sudo sh ./paketle.sh
-sudo dpkg -i sistem-asistani_1.0_amd64.deb
 ```
 
-### Kaynak Koddan Çalıştırma (Geliştirici Modu)
+Sisteminize Uygun Scripti Çalıştırın:
+
+🔴 Pardus 25 (Debian 12) Kullanıyorsanız:
+```bash
+sudo sh ./paketle_pardus25.sh
+```
+🟠 Pardus 23 (Debian 11) Kullanıyorsanız:
+
+```bash
+sudo sh ./paketle_pardus23.sh
+```
+**Oluşan Paketi Kurun:** İşlem bittiğinde oluşan .deb paketini kurun: (* yerine paketadiniz.deb)
+```bash
+sudo dpkg -i *.deb
+```
+
+---
+
+### Yöntem 3: Kaynak Koddan Çalıştırma (Geliştirici Modu)
 Geliştiriciler veya depoyu klonlayıp direkt çalıştırmak isteyenler için:
 
 ```bash
+# 1. Gerekli sistem araçlarını yükleyin
 sudo apt update
 sudo apt install python3-pip python3-venv libxcb-cursor0 network-manager ufw smartmontools nmap
 
+# 2. Depoyu çekin
 git clone [https://github.com/tvardar/sistem-asistani.git](https://github.com/tvardar/sistem-asistani.git)
 cd sistem-asistani
+
+# 3. Sanal ortam oluşturun ve başlatın (Önerilen)
 python3 -m venv venv
 source venv/bin/activate
+
+# 4. Bağımlılıkları yükleyin
 pip install -r requirements.txt
 
+# 5. Uygulamayı başlatın
 python3 sistem_asistani.py
 ```
+
+---
+
+## ⚠️ Önemli Notlar
+
+**Root Yetkisi:** Uygulama, sistem dosyalarına müdahale ettiği için (güncelleme, UFW, hosts vb.) kritik işlemlerde pkexec (veya Pardus 23'te policykit) aracılığıyla root şifrenizi isteyecektir.
+
+Uyumluluk:
+
+Pardus 25 / Debian 12 (Bookworm): Tam uyumlu.
+
+Pardus 23 / Debian 11 (Bullseye): Tam uyumlu (Özel paketleme scripti ile).
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Projeye katkıda bulunmak isterseniz:
+
+Bu depoyu Fork'layın.
+
+Yeni bir özellik dalı (feature branch) oluşturun.
+
+Değişikliklerinizi yapın ve Commit'leyin.
+
+Dalı Push'layın ve bir Pull Request oluşturun.
+
+---
+
+## 📝 Lisans
+
+Bu proje GNU Genel Kamu Lisansı v3.0 **(GPLv3)** ile lisanslanmıştır.
+
+Özgür yazılımdır; değiştirebilir ve dağıtabilirsiniz.
+
+---
+
+## 👨‍💻 İletişim & Geliştirici
+
+Tarık Vardar
+
+🌐 Web: www.tarikvardar.com.tr
+
+💻 GitHub: github.com/tvardar
+
+📧 E-Posta: tarikvardar@gmail.com
+
+
+
