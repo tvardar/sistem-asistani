@@ -3,8 +3,8 @@
 [![Pardus 25](https://img.shields.io/badge/Pardus-25-2ecc71?style=for-the-badge&logo=linux&logoColor=white)]([https://github.com/tvardar/sistem-asistani](https://github.com/tvardar/sistem-asistani/releases/download/v1.0/sistem-asistani_1.0_amd64.deb))
 [![Debian 12](https://img.shields.io/badge/Debian-12-A81D33?style=for-the-badge&logo=debian&logoColor=white)]([https://www.debian.org](https://github.com/tvardar/sistem-asistani/releases/download/v1.0/sistem-asistani_1.0_amd64.deb))
 
-[![Pardus 23](https://img.shields.io/badge/Pardus-23-e67e22?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/tvardar/sistem-asistani)
-[![Debian 11](https://img.shields.io/badge/Debian-11-A81D33?style=for-the-badge&logo=debian&logoColor=white)](https://www.debian.org)
+[![Pardus 23](https://img.shields.io/badge/Pardus-23-e67e22?style=for-the-badge&logo=linux&logoColor=white)]([https://github.com/tvardar/sistem-asistani](https://github.com/tvardar/sistem-asistani/releases/download/v0.9/sistem-asistani_1.0_pardus23_amd64.deb))
+[![Debian 11](https://img.shields.io/badge/Debian-11-A81D33?style=for-the-badge&logo=debian&logoColor=white)]([https://www.debian.org](https://github.com/tvardar/sistem-asistani/releases/download/v0.9/sistem-asistani_1.0_pardus23_amd64.deb))
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow.svg)
