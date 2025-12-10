@@ -1,0 +1,13 @@
+build/
+build_deb/
+dist/
+bagimliliklar/
+*.spec
+*.deb
+__pycache__/
+*.pyc
+config.json
+*.log
+sistem_asistani_cron.log
+.vscode/
+.idea/
