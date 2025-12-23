@@ -63,9 +63,9 @@ requeriments.txt içerisinden kendisi tüm gereksinimleri indirmektedir.
 
 ### Yöntem 1 : (deb paketini indirip çift tıklayın)
 
-**Pardus 23 ve ya daha eski sürümler (Debian 11 > ) için :** (https://github.com/tvardar/sistem-asistani/releases/download/v0.9/sistem-asistani_1.0_pardus23_amd64.deb)
+**Pardus 23 ve ya daha eski sürümler (Debian 12 > ) için :** (https://github.com/tvardar/sistem-asistani/releases/download/v0.9/sistem-asistani_1.0_pardus23_amd64.deb)
 
-**Pardus 25 ve ya daha yeni sürümler (Debian 12 = < ) için :** (https://github.com/tvardar/sistem-asistani/releases/download/v1.1/sistem-asistani_1.1_amd64.deb)
+**Pardus 25 ve ya daha yeni sürümler (Debian 13 = < ) için :** (https://github.com/tvardar/sistem-asistani/releases/download/v1.1/sistem-asistani_1.1_amd64.deb)
 
 Bu dosyalardan sisteminize uygun olanı indirip **çift tıklayarak** kurabilir **ya da**  indirdiğiniz klasöre girerek ;
 
@@ -83,13 +83,13 @@ Buradan : (https://github.com/tvardar/sistem-asistani/archive/refs/heads/main.zi
 
 Bir klasöre çıkarın ve o klasör içerisinde terminal açın
 
-**Pardus 25 - Debian 12 ve yeni sürümler için**
+**Pardus 25 - Debian 13 ve yeni sürümler için**
 
 ```bash
     sudo sh ./paketle_pardus25.sh
 ```
 
-**Pardus 23 - Debian 11 ve eski sürümler**
+**Pardus 23 - Debian 12 ve eski sürümler**
 
 ```bash
     sudo sh ./paketle_pardus23.sh
